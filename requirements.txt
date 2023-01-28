@@ -1,0 +1,4 @@
+tk
+jmspack
+plotly
+py2app
