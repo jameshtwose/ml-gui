@@ -66,7 +66,7 @@ def outcome_clicked():
 root = tk.Tk()
 root.geometry("800x500")
 root.title("Machine Learning Report Creation")
-root.iconbitmap("./assets/favicon.ico")
+# root.iconbitmap("./assets/favicon.ico")
 # root.iconbitmap('./assets/test.ico')
 # root.tk.call('wm', 'iconphoto', root._w, tk.PhotoImage(file='./assets/logo.png'))
 

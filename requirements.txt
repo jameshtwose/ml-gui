@@ -1,4 +1,5 @@
 tk
 jmspack
 plotly
-py2app
+# py2app
+pyinstaller>=5.7.0
