@@ -25,3 +25,9 @@ Creating a simple Machine Learning graphical user interface that will provide ou
 
 ## Troubleshooting
 - `brew install python-tk` (possible issue with tkinter on macOS)
+
+## Windows app run commands
+- `conda create -n mlgui_env python=3.10`
+- `conda activate mlgui_env`
+- `pip install -r requirements.txt`
+- `python mlgui.py`
