@@ -1,0 +1,101 @@
+{
+    "categories": [
+      {
+        "title": "## \ud83d\ude80 Enhancement",
+        "labels": [
+          "enhancement"
+        ]
+      },
+      {
+        "title": "## \ud83d\udee0 Bugfix",
+        "labels": [
+          "bugfix"
+        ]
+      },
+      {
+        "title": "## \u26a1 New Functionality",
+        "labels": [
+          "new functionality"
+        ]
+      },
+      {
+        "title": "## \ud83c\udfa8 Documentation",
+        "labels": [
+          "documentation"
+        ]
+      },
+      {
+        "title": "## \u2611\ufe0f Backlog",
+        "labels": [
+          "Backlog"
+        ]
+      },
+      {
+        "title": "## \ud83c\udc04 Deprecation warning",
+        "labels": [
+          "depreciation warning"
+        ]
+      },
+      {
+        "title": "## \ud83e\uddec Duplicate",
+        "labels": [
+          "duplicate"
+        ]
+      },
+      {
+        "title": "## \ud83d\udc4b Help Wanted",
+        "labels": [
+          "help wanted"
+        ]
+      },
+      {
+        "title": "## \u274c Invalid",
+        "labels": [
+          "invalid"
+        ]
+      },
+      {
+        "title": "## \ud83d\udd28 New Build",
+        "labels": [
+          "new build"
+        ]
+      },
+      {
+        "title": "## \ud83e\uddea New tests",
+        "labels": [
+          "New tests"
+        ]
+      },
+      {
+        "title": "##\u2753 Question",
+        "labels": [
+          "question"
+        ]
+      },
+      {
+        "title": "## \u274e Won't fix",
+        "labels": [
+          "wontfix"
+        ]
+      }
+    ],
+    "ignore_labels": [
+      "ignore"
+    ],
+    "sort": "ASC",
+    "template": "${{CATEGORIZED_COUNT}} changes since ${{FROM_TAG}}\n\n${{CHANGELOG}}\n\n## Other Updates\n\n${{UNCATEGORIZED}}\n",
+    "pr_template": "- ${{TITLE}} (#${{NUMBER}})",
+    "empty_template": "No Changes",
+    "label_extractor": [
+      {
+        "pattern": "(.) (.+)",
+        "target": "$1"
+      }
+    ],
+    "max_tags_to_fetch": 200,
+    "max_pull_requests": 250,
+    "max_back_track_time_days": 90,
+    "tag_resolver": {
+      "method": "semver"
+    }
+  }
