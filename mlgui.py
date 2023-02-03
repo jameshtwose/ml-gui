@@ -5,8 +5,11 @@ from tkinter.messagebox import showinfo
 from classification import fit_predict_evaluate_classification
 from EDA import create_descriptives
 from report_templates import classification_report_template
+from multiprocessing import freeze_support
+freeze_support()
 
 def make_report(filename: str, export_name="report.html", outcome=None):
+    """make a report from a csv file"""
     df = pd.read_csv(filename)
     if any([x == "Unnamed: 0" for x in df.columns.tolist()]):
         _ = df.drop(columns="Unnamed: 0", inplace=True)
