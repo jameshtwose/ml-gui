@@ -1,6 +1,9 @@
 # ml-gui
 Creating a simple Machine Learning graphical user interface that will provide output. 
 
+## Example Windows install and run
+![windows install and run example](20230203125037.gif)
+
 ## App build command
 - `pyinstaller --onefile --windowed mlgui.py` or 
 - `pyinstaller --noconfirm --clean mlgui.spec` (this is preferred)
