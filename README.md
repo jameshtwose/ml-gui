@@ -14,5 +14,14 @@ Creating a simple Machine Learning graphical user interface that will provide ou
 - `pip install -r requirements.txt`
 - `python mlgui.py`
 
+## Create a new branch based on develop and tag the release
+- `git checkout -b release-#.#.# develop` where `#.#.#`, is the new version e.g. `0.0.1`
+- `git add .`
+- `git commit -m "Version bump to #.#.#"`
+- `git tag -a v#.#.# -m "Tagging version #.#.# as v#.#.#"`
+- `git push origin --tags`
+    - This will create a tag with the version and push the local tags to remote (this will trigger the `release.yml` github action)
+- `git push origin release-#.#.#`
+
 ## Troubleshooting
 - `brew install python-tk` (possible issue with tkinter on macOS)
